@@ -12,6 +12,6 @@ g4 <- function(n){
   x
 }
 
-z <- g4(10000)
+z <- g4(5000) #changed to 5000
 
-mean(z == 9)
+mean(z == 3) #changed from 9 to 3
