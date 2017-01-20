@@ -14,6 +14,9 @@ georv(10, 0.4)
 
 mean(georv(10000,0.4))
 
+# The R way
+mean(replicate(10000, floor(log(runif(1)) / log(1 - 0.4))) + 1)
+
 #Generating a Poisson Random Variable
 
 poisrv <- function(n,l){
